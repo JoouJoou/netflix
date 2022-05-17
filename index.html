@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Netflix Brasil - Assistir a séries online, assistir a filmes online</title>
+    <link rel="icon" href="img/Juan.jpeg">
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/logo.png" alt="" draggable="false">
+        <div>
+            <select name="language" id="">
+                <option value="">Português</option>
+                <option value="">Inglês</option>
+            </select>
+            <a href="login.html">Entrar</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-child">
+            <h1>Filmes, séries e muito mais. Sem limites.</h1>
+            <p id="p1">Assista onde quiser. Cancele quando quiser.</p>
+            <p id="p2">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+            <form class="forms">
+                <input type="text" id="form" placeholder="Email">
+                <button>Vamos lá ></button>
+            </form>
+        </div>
+        <div class="escurecer"></div>
+
+    </main>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid">
+                <div>
+                    <h1>Aproveite na TV.</h1>
+                    <p>Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros
+                        dispositivos.</p>
+                </div>
+                <div class="tv">
+                    <img src="img/tv.png" alt="">
+                    <video class="video" autoplay playsinline muted loop>
+                        <source
+                            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download section">
+        <div class="container">
+            <div class="grid">
+                <div>
+                    <h1>Baixe séries para assistir offline.</h1>
+                    <p>Salve seus títulos favoritos e sempre tenha algo para assistir.</p>
+                </div>
+                <div class="download-el tv">
+                    <img id="eleven" src="img/eleven.jpeg" alt="">
+                    <div class="box">
+                        <img src="img/boxshot.png" alt="">
+                        <div class="box-text">
+                            <h2>Stranger Things</h2>
+                            <p>Download em andamento...</p>
+                        </div>
+                        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mobile section">
+        <div class="container">
+            <div class="grid">
+                <div>
+                    <h1>Assista quando quiser.</h1>
+                    <p>Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</p>
+                </div>
+                <div class="tv">
+                    <img src="img/tela.png" alt="">
+                    <video class="video" autoplay playsinline muted loop>
+                        <source
+                            src="img/nelly furtado - say it right (sub español) 'oh you don't mean nothing at all to me'.mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="asks section">
+        <div>
+            <h1>Perguntas frequentes</h1>
+        </div>
+        <ul class="lista">
+            <li>
+                <button class="frequency" onclick="toggleP(this, 1)">O que é a Netflix?</button>
+            </li>
+            <li>
+                <button class="frequency" onclick="toggleP(this, 2)">Quanto custa a Netflix?</button>
+            </li>
+            <li>
+                <button class="frequency" onclick="toggleP(this, 3)">Onde posso assistir?</button>
+            </li>
+            <li>
+                <button class="frequency" onclick="toggleP(this, 4)">Como faço para cancelar?</button>
+            </li>
+            <li>
+                <button class="frequency" onclick="toggleP(this, 5)">O que eu posso assistir na netflix?</button>
+            </li>
+            <li>
+                <button class="frequency" onclick="toggleP(this, 6)">A Netflix é adequada para crianças?</button>
+            </li>
+        </ul>
+        <p class="textnew especifico">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.
+        </p>
+        <form class="forms">
+            <input type="text" id="form" placeholder="Email">
+            <button>Vamos lá ></button>
+        </form>
+    </section>
+
+    <script src="frequency.js"></script>
+</body>
+
+</html>

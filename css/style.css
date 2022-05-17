@@ -1,0 +1,282 @@
+body {
+  font-family: sans-serif;
+  color: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1320px;
+  margin: 0 55px;
+}
+
+.header img {
+  max-width: 160px;
+  min-height: 90px;
+  top: 10px;
+}
+
+.header a {
+  display: inline-block;
+  background-color: #e50914;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-align: center;
+  font-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.header select {
+  background-color: rgba(34, 34, 34, 0);
+  color: white;
+  padding: 9px 20px;
+  border-radius: 3px;
+  margin-right: 30px;
+}
+
+.main {
+  min-height: 785px;
+  width: auto;
+  background: url(../img/BG.jpeg) center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.main-child {
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+}
+
+.main h1 {
+  font-size: 64px;
+  max-width: 800px;
+}
+
+#p1 {
+  font-size: 24px;
+  margin-top: 25px;
+}
+
+#p2 {
+  font-size: 19px;
+  margin-top: 40px;
+}
+
+.forms {
+  display: grid;
+  grid-template-columns: 450px 180px;
+  margin-top: 20px;
+}
+
+.forms input {
+  padding: 15px 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.forms button {
+  background-color: #e50914;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.forms button::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 19px;
+  background: url("../img/arrow.png");
+}
+
+.forms button:hover {
+  background: #d2020d;
+}
+
+.escurecer {
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.section {
+  background: black;
+  padding: 1rem 0;
+  border-top: 8px solid #222;
+}
+
+.section h1 {
+  font-size: 50px;
+  margin-bottom: 32px;
+}
+
+.section p {
+  font-size: 25px;
+  max-width: 550px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+}
+
+.tv {
+  position: relative;
+}
+
+.tv img {
+  position: relative;
+  z-index: 1;
+}
+
+.video {
+  position: absolute;
+  max-width: 400px;
+  top: 87px;
+  left: 77px;
+}
+
+.download .grid > div:first-child {
+  order: 2;
+  margin-top: 40px;
+}
+
+.download-el {
+  order: 1;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.download-el #eleven {
+  max-width: 550px;
+  display: flex;
+  justify-content: center;
+}
+
+.box img {
+  max-width: 55px;
+  max-height: 75px;
+  margin-left: 8px;
+}
+
+.box {
+  max-width: 330px;
+  max-height: 95px;
+  z-index: 1;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  box-shadow: black;
+  border: 3px solid rgb(255, 255, 255, 0.25);
+  border-radius: 10px;
+  left: 21%;
+  bottom: 6%;
+  padding: 10px 0;
+}
+
+.box h2 {
+  font-size: 18px;
+  margin-left: 18px;
+}
+
+.box p {
+  width: 180px;
+  font-size: 14.4px;
+  color: #0071eb;
+  margin-left: 18px;
+  margin-top: 5px;
+}
+
+.kids .grid > div:first-child {
+  order: 2;
+}
+
+.kids .tv {
+  order: 1;
+}
+
+.kids .tv img {
+  max-height: 400px;
+}
+
+.mobile .tv .video {
+  max-width: 360px;
+  max-height: 200px;
+  left: 18%;
+  top: 10%;
+}
+
+.asks {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.asks h1 {
+  margin-top: 70px;
+  font-size: 50px;
+}
+
+.frequency {
+  background-color: #303030;
+  color: white;
+  border: none;
+  font-size: 26px;
+  width: 641px;
+  height: 75px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.textnew.especifico {
+  max-width: 670px;
+  font-size: 19px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.textlist.estilo {
+  background-color: #303030;
+  padding: 31.2px;
+  max-width: 641px;
+  color: white;
+  font-size: 26px;
+  margin: 0;
+  margin-top: 1px;
+  transition: 300ms ease-in-out;
+}
